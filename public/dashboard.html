@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">MeuPainel</div>
+        <nav>
+          <a class="active" href="#">Visão geral</a>
+          <a href="#">Usuários</a>
+          <a href="#">Vendas</a>
+          <a href="#">Relatórios</a>
+          <a href="#">Configurações</a>
+        </nav>
+        <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <h1>Dashboard</h1>
+          <div class="actions">
+            <input placeholder="Pesquisar..." />
+            <button id="logout">Sair</button>
+          </div>
+        </header>
+
+        <section class="content">
+          <!-- KPI cards -->
+          <div class="kpis">
+            <div class="card kpi">
+              <div class="kpi-value">1.248</div>
+              <div class="kpi-label">Usuários ativos</div>
+            </div>
+            <div class="card kpi">
+              <div class="kpi-value">R$ 34.560</div>
+              <div class="kpi-label">Receita (mês)</div>
+            </div>
+            <div class="card kpi">
+              <div class="kpi-value">76</div>
+              <div class="kpi-label">Novos leads</div>
+            </div>
+          </div>
+
+          <!-- Charts + recent -->
+          <div class="grid">
+            <div class="card chart" aria-label="Gráfico de barras CSS">
+              <h3>Vendas por semana</h3>
+              <div class="bars" id="bars">
+                <!-- barras geradas pelo JS -->
+              </div>
+            </div>
+
+            <div class="card recent">
+              <h3>Atividades recentes</h3>
+              <ul>
+                <li><strong>Ana</strong> criou uma conta · 2h</li>
+                <li><strong>João</strong> completou compra · 4h</li>
+                <li><strong>Maria</strong> pediu suporte · 1d</li>
+                <li><strong>Lucas</strong> atualizou perfil · 3d</li>
+              </ul>
+            </div>
+
+            <div class="card profile">
+              <h3>Perfil</h3>
+              <p><span id="username">Carregando...</span> — Administradora</p>
+              <button class="btn">Ver perfil</button>
+            </div>
+
+            <div class="card table">
+              <h3>Últimas transações</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pedido</th>
+                    <th>Cliente</th>
+                    <th>Valor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#1023</td>
+                    <td>Roberto</td>
+                    <td>R$ 120,00</td>
+                  </tr>
+                  <tr>
+                    <td>#1022</td>
+                    <td>Carla</td>
+                    <td>R$ 980,00</td>
+                  </tr>
+                  <tr>
+                    <td>#1021</td>
+                    <td>Marcos</td>
+                    <td>R$ 45,00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">© 2025 MeuPainel Craido por Sayonnara</footer>
+      </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

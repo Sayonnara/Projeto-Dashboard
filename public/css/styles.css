@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;             /* centraliza no eixo horizontal */
+    justify-content: center;   /* centraliza no eixo horizontal */
+    align-items: center;       /* centraliza no eixo vertical */
+    height: 100vh;             /* ocupa a tela inteira */
+}
+
+
+h1{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00d0ff, #0419ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    cursor:pointer;
+     animation: zoomAppear 2s ease forwards;
+    opacity: 0;
+
+}
+
+@keyframes zoomAppear {
+    0% {
+        transform: scale(0.5) translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3) translateY(0);
+        opacity: 2;
+    }
+}
+
+
+
+form {
+    background: rgb(11, 126, 209);
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;               /* AGORA controla o tamanho certinho */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input {
+  transition: box-shadow 200ms ease, transform 150ms ease;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 6px 10px rgb(40, 40, 40);
+  transform: translateY(-2px);
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: #555;
+}
