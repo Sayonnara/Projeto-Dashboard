@@ -6,21 +6,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #7aaaf2;
     display: flex;             /* centraliza no eixo horizontal */
     justify-content: center;   /* centraliza no eixo horizontal */
     align-items: center;       /* centraliza no eixo vertical */
-    height: 100vh;             /* ocupa a tela inteira */
+    height: 100vh; 
+            /* ocupa a tela inteira */
+    
 }
 
 
 h1{
     text-align: center;
-    font-size: 34px;
+    font-size: 25px;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, #00d0ff, #0419ff);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
     font-weight: 900;
     cursor:pointer;
      animation: zoomAppear 2s ease forwards;
@@ -46,6 +46,7 @@ form {
     width: 400px;
     padding: 20px;
     border-radius: 8px;
+    margin-bottom: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
@@ -62,11 +63,13 @@ input {
     margin-bottom: 10px;
     border: none;
     border-radius: 4px;
+    
 }
 
 input {
   transition: box-shadow 200ms ease, transform 150ms ease;
   border: 1px solid rgba(0,0,0,0.1);
+
 }
 
 input:focus {
@@ -87,4 +90,10 @@ button {
 }
 button:hover {
     background: #555;
+}
+
+a{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
 }

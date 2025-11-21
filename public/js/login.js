@@ -36,7 +36,7 @@ form.addEventListener('submit', async (e) => {
         window.location.href = '/dashboard.html';
 
     } catch (error) {
-        msg.textContent = 'Erro na conexão com o servidor.';
+        msg.textContent = 'Verifique seus dados!! .';
     }
 
 });
