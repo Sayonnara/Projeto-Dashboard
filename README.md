@@ -135,6 +135,11 @@ http://localhost:3000/login.html
 
 
 
+<img width="2560" height="1440" alt="telas" src="https://github.com/user-attachments/assets/ae6babb0-9110-4dd5-9bb4-4d13c9753d2b" />
+
+
+<img width="2560" height="1440" alt="dashboard" src="https://github.com/user-attachments/assets/b776b7ef-01a3-434a-a935-507dc8df3e44" />
+
 🌎 Deploy
 
 
