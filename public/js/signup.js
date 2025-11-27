@@ -20,7 +20,7 @@ document.getElementById("formSignup").addEventListener("submit", async (e) => {
 
     if (response.ok) {
         alert("Usuário criado com sucesso!");
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     } else {
         alert(data.erro || "Erro ao registrar");
     }
