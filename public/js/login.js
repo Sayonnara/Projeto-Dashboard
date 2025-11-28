@@ -1,3 +1,6 @@
+// URL base da API hospedada no Render
+const API_URL = "https://projeto-dashboard-c5qc.onrender.com";
+
 // captura o form 
 const form = document.getElementById('loginForm');
 const msg = document.getElementById('msg');
@@ -15,10 +18,10 @@ form.addEventListener('submit', async (e) => {
     }
 
     try {
-        // envia requisição para o servidor
-        const res = await fetch('/login', {
+        // envia requisição para o servidor (AGORA APONTA PARA A API DO RENDER)
+        const res = await fetch(`${API_URL}/login`, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' }, // CORRIGIDO
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
         });
 
@@ -36,7 +39,6 @@ form.addEventListener('submit', async (e) => {
         window.location.href = '/dashboard.html';
 
     } catch (error) {
-        msg.textContent = 'Verifique seus dados!! .';
+        msg.textContent = 'Verifique seus dados!';
     }
-
 });

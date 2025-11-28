@@ -10,7 +10,10 @@ document.getElementById("formSignup").addEventListener("submit", async (e) => {
         return;
     }
 
-    const response = await fetch("/register", {
+    // URL base da API hospedada no Render
+const API_URL = "https://projeto-dashboard-c5qc.onrender.com";
+
+    const response = await fetch(`${API_URL}/register`, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ username, email, password })
@@ -22,6 +25,6 @@ document.getElementById("formSignup").addEventListener("submit", async (e) => {
         alert("Usuário criado com sucesso!");
         window.location.href = "index.html";
     } else {
-        alert(data.erro || "Erro ao registrar");
+        alert(data.error || "Erro ao registrar");
     }
 });
